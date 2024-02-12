@@ -13,6 +13,7 @@ const headers = {
             headers,
             params
         })
+        
         return data;
     }catch(err){
         console.log(err);

@@ -21,6 +21,7 @@ function App() {
     fetchApiConfig();
     genresCall();
   }, []);
+
   const fetchApiConfig = () => {
     fetchDataFromApi("/configuration").then((res) => {
       console.log(res);
