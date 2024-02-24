@@ -51,7 +51,7 @@ function App() {
     dispatch(getGenres(allGenres));
   };
   return (
-    <BrowserRouter basename="/moviex">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
