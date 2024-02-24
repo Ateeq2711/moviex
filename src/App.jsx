@@ -51,7 +51,7 @@ function App() {
     dispatch(getGenres(allGenres));
   };
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/moviex">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
